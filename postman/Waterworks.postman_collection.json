@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "126fae3c-806b-43a4-aaee-070f5d5eef2c",
+		"name": "Waterworks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40237480"
+	},
+	"item": [
+		{
+			"name": "get Reading For Symvaro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/getReadings",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"getReadings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "All Readings",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Reading April",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Reading by system app",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add New Meter",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "edid Meter",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete Meter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/deleteMeter",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"deleteMeter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Reading for Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/getReadingsForCustomer?name",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"getReadingsForCustomer"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
